@@ -10,7 +10,7 @@ two_digit_number = input("Type a two digit number: ")
 
 #  The inputed data will be in the format of a string
 
-firstNumber = two_digit_number[0]  # We use the square bracket to specify we want the 1st character
+firstNumber = two_digit_number[0]  # We use the square bracket (subscripting) to specify we want the 1st character
 secondNumber = two_digit_number[1]  # We use the square bracket to specify we want the 2nd character
 
 print(int(firstNumber) + int(secondNumber))  # Strings can't do arithmetic operations, so we convert them
