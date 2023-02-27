@@ -12,11 +12,14 @@ bmi = round(weight / (height ** 2))  # Use brackets to prioritise Multiplication
 
 if bmi < 18.5:
     print(f"Your BMI is {bmi}, you are underweight.")
-elif 18.5 < bmi < 25:  # 'elif' is only used when the previous IF Statement is not True
+elif bmi < 25:  # 'elif' is only used when the previous IF Statement is not True
     print(f"Your BMI is {bmi}, you have a normal weight.")
-elif 25 < bmi < 30:
+elif bmi < 30:
     print(f"Your BMI is {bmi}, you are slightly overweight.")
-elif 30 < bmi < 35:
+elif bmi < 35:
     print(f"Your BMI is {bmi}, you are obese.")
 else:
     print(f"Your BMI is {bmi}, you are clinically obese.")
+
+# We don't have to keep writing >18.5 for the BMI because the statements are executed in order,
+# one after the other, so we have already tested before it's value being 18.5, we can move on
