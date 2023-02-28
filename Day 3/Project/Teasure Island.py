@@ -1,4 +1,4 @@
-# Day 2 - Tip Calculator: End Project
+# Day 3 - Treasure Island: End Project
 # Exercise Completed & Checked Against Solution
 
 print('''
