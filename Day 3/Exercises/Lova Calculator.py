@@ -1,4 +1,4 @@
-# Day 3 - Exercise 4: Pizza Order Practice
+# Day 3 - Exercise 5: Love Calculator
 # Exercise Completed & Checked via Coding Rooms Submission Checker
 
 # 🚨 Don't change the code below 👇
