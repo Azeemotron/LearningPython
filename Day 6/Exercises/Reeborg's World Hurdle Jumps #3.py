@@ -9,7 +9,6 @@ def turn_right():
 
 
 def jump():
-    move()
     turn_left()
     move()
     turn_right()
@@ -18,8 +17,10 @@ def jump():
     move()
     turn_left()
 
-
-for jumps in range(6):  # Instructs the Jump function to be executed 6 times (enough to get to desired position)
-    jump()
+while not at_goal():  # Run for as long as not at the goal
+    if front_is_clear() == True:  # Nesting an IF Statement to help robot determine its options
+        move()
+    elif wall_in_front() == True:
+        jump()  # Removed the 'move()' at the start of jump function as well
 
 # It worked

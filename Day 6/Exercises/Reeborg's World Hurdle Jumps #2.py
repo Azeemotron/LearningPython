@@ -19,7 +19,11 @@ def jump():
     turn_left()
 
 
-for jumps in range(6):  # Instructs the Jump function to be executed 6 times (enough to get to desired position)
+while at_goal() == False:  # Remember that it's '==' not '='. 'False' must also be capital 'F'
     jump()
+
+# We could also use the while not at_goal():  As the 'not' keyword flips the condition
+
+# A while loop can become an infinite loop if it's given a condition that will make it last forever
 
 # It worked

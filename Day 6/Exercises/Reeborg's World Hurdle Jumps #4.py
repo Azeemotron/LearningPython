@@ -7,19 +7,21 @@ def turn_right():
     turn_left()
     turn_left()
 
-
 def jump():
-    move()
     turn_left()
-    move()
+    while wall_on_right() == True:
+        move()
     turn_right()
     move()
     turn_right()
-    move()
+    while front_is_clear() == True:
+        move()
     turn_left()
 
-
-for jumps in range(6):  # Instructs the Jump function to be executed 6 times (enough to get to desired position)
-    jump()
+while not at_goal():
+    if front_is_clear() == True:
+        move()
+    elif wall_in_front() == True:
+        jump()
 
 # It worked
