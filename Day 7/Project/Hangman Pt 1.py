@@ -13,7 +13,7 @@ userCharacter = input("Type a letter.\n").lower()
 
 # TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
 
-for letter in selectedWord:
+for letter in selectedWord:  # For loops can be used on strings to check each letter
     if letter == userCharacter:
         print("Right")
     else:
